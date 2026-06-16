@@ -17,29 +17,67 @@
         <link href="styles.css" rel="stylesheet" />
     </head>
     <body>
-        <main>
-            <div class="chat-container">
-                <h1>Chatbot de Asistencia</h1>
+        <div class="app-layout">
+            <aside class="sidebar">
+                <div class="sidebar-header">
+                    <span class="material-symbols-outlined">auto_awesome</span>
+                    <span>Asistente de chat</span>
+                </div>
 
-                <div id="chat-box" class="chat-box">
-                    <div class="bot-message">
-                        ¡Hola! Soy tu asistente virtual. ¿En qué puedo ayudarte?
+                <nav class="sidebar-nav">
+                    <button class="nav-item active">
+                        <span class="material-symbols-outlined"
+                            >add_comment</span
+                        >
+                        Nuevo Chat
+                    </button>
+
+                    <button class="nav-item">
+                        <span class="material-symbols-outlined">history</span>
+                    </button>
+
+                    <button class="nav-item">
+                        <span class="material-symbols-outlined">settings</span>
+                        Configuración
+                    </button>
+                </nav>
+
+                <div class="sidebar-footer">
+                    <div class="user-profile">
+                        <div class="avatar">R</div>
+
+                        <div class="user-info">
+                            <span class="name">Rober</span>
+                            <span class="status">Premium</span>
+                        </div>
                     </div>
                 </div>
+            </aside>
+            <main>
+                <div class="chat-container">
+                    <h1>Chatbot de Asistencia</h1>
 
-                <div class="input-area">
-                    <input
-                        type="text"
-                        id="user-input"
-                        placeholder="Escribe tu mensaje aquí..."
-                    />
+                    <div id="chat-box" class="chat-box">
+                        <div class="bot-message">
+                            ¡Hola! Soy tu asistente virtual. ¿En qué puedo
+                            ayudarte?
+                        </div>
+                    </div>
 
-                    <button id="send-btn">
-                        <span class="material-symbols-outlined">send</span>
-                    </button>
+                    <div class="input-area">
+                        <input
+                            type="text"
+                            id="user-input"
+                            placeholder="Escribe tu mensaje aquí..."
+                        />
+
+                        <button id="send-btn">
+                            <span class="material-symbols-outlined">send</span>
+                        </button>
+                    </div>
                 </div>
-            </div>
-        </main>
+            </main>
+        </div>
 
         <script src="script.js"></script>
     </body>
